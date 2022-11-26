@@ -235,6 +235,7 @@
               $("#desa").empty();
               $("#desa").append('<option value ="PULUTAN"> PULUTAN</option>' +
                   '<option value ="BLOTONGAN"> BLOTONGAN</option>' +
+                  '<option value ="BUGEL"> BUGEL</option>' +
                   '<option value ="KAUMAN KIDUL"> KAUMAN KIDUL</option>' +
                   '<option value ="SALATIGA"> SALATIGA</option>' +
                   '<option value ="SIDOREJO LOR"> SIDOREJO LOR</option>');

@@ -253,7 +253,7 @@
                         <th>Nama</th>
                         <th>Gambar Utama</th>
                         <th>Icon</th>
-                        <th>Sub</th>
+                        <th>Sub <p style="color:red;font-weight:400;">*(Klik nama untuk edit/hapus)</p></th>
                         <th>Aksi</th>
                     </tr>
                     @php

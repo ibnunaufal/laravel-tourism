@@ -133,4 +133,16 @@ class SubCategoryController extends Controller
         // $destinasi = Destinasi::where('id', $id)->delete();
         return redirect('/admin')->with('success', 'destinasi deleted successfully');
     }
+
+    public function deleteById(Request $request)
+    {
+        $id = $request->id;
+        //
+        $subcat = SubCategory::find($id);
+        // error_log($id);
+        // dd($subcat->name);
+        $subcat->delete();
+        // $destinasi = Destinasi::where('id', $id)->delete();
+        return redirect('/admin?type=cat')->with('success', 'destinasi deleted successfully');
+    }
 }

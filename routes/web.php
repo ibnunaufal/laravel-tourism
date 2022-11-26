@@ -83,3 +83,5 @@ Route::post('reset-password', [App\Http\Controllers\ForgotPasswordController::cl
 
 Route::get('/add-place', [App\Http\Controllers\AdminController::class, 'addPlace'])->name('addPlace');
 Route::post('/add-place', [App\Http\Controllers\AdminController::class, 'addingPlace'])->name('addingPlace');
+
+Route::get('deleteSubCat', [App\Http\Controllers\SubCategoryController::class, 'deleteById'])->name('deleteById');

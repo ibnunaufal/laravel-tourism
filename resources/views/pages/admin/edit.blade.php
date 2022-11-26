@@ -214,6 +214,22 @@
                     </div>
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary">Simpan</button>
+                        <input id="hiddenId" type="hidden" value="/deleteSubCat?id={{$subCategory->id}}">
+                        <input id="nameHidden" type="hidden" value="{{$subCategory->name}}">
+                        <div class="btn btn-danger" 
+                        onclick="
+                        let text;
+                        let url = document.getElementById('hiddenId').value;
+                        let nameConfirm = 'Anda yakin akan menghapus '+document.getElementById('nameHidden').value;
+                        console.log(url);
+                        if (confirm(nameConfirm) == true) {
+                          text = 'You pressed OK!';                          
+                          window.location.href = url;
+                        } else {
+                          text = 'You canceled!';
+                        }
+                        console.log(text);
+                        ">Hapus</div>
                     </div>
                 </form>
           </div>
